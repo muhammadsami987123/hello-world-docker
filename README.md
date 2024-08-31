@@ -1,5 +1,5 @@
-﻿markdown
-Copy code
+﻿
+```markdown
 # Hello World in Docker with Jupyter Notebook
 
 This project by Muhammad Sami Asghar Mughal demonstrates a basic setup for running a "Hello World" program inside a Docker container using Jupyter Notebook.
@@ -16,10 +16,12 @@ Ensure you have the following installed:
 
 ### Project Structure
 
-hello-world-docker/ │ ├── Dockerfile # Docker configuration file └── README.md # Project documentation
-
-bash
-Copy code
+```
+hello-world-docker/
+│
+├── Dockerfile       # Docker configuration file
+└── README.md        # Project documentation
+```
 
 ### Setup Instructions
 
@@ -30,45 +32,52 @@ Copy code
    ```bash
    git clone https://github.com/your-username/hello-world-docker.git
    cd hello-world-docker
-Build the Docker Image
+   ```
 
-Build the Docker image using the provided Dockerfile:
+2. **Build the Docker Image**
 
-bash
-Copy code
-docker build -t hello-world-jupyter .
-Run the Docker Container
+   Build the Docker image using the provided `Dockerfile`:
 
-Start a Docker container from the image and launch Jupyter Notebook:
+   ```bash
+   docker build -t hello-world-jupyter .
+   ```
 
-bash
-Copy code
-docker run -p 8888:8888 hello-world-jupyter
-Access Jupyter Notebook
+3. **Run the Docker Container**
 
-After running the container, a URL with a token will be displayed in the terminal. Copy this URL and open it in your web browser to access Jupyter Notebook.
+   Start a Docker container from the image and launch Jupyter Notebook:
 
-Run "Hello World"
+   ```bash
+   docker run -p 8888:8888 hello-world-jupyter
+   ```
 
-In Jupyter Notebook, create a new Python 3 notebook.
+4. **Access Jupyter Notebook**
 
-In the first cell, type:
+   After running the container, a URL with a token will be displayed in the terminal. Copy this URL and open it in your web browser to access Jupyter Notebook.
 
-python
-Copy code
-print("Hello, World!")
-Run the cell to see the output.
+5. **Run "Hello World"**
 
-Troubleshooting
-Docker Connection Issues: Ensure Docker Desktop is running and fully initialized before building the image.
-Jupyter Notebook Access: Make sure the port 8888 is available and not blocked by other applications.
-Contact
-Email: m.smiwaseem1234@gmail.com
-LinkedIn: https://www.linkedin.com/in/muhammad-sami-3aa6102b8/
-License
+   - In Jupyter Notebook, create a new Python 3 notebook.
+   - In the first cell, type:
+
+     ```python
+     print("Hello, World!")
+     ```
+
+   - Run the cell to see the output.
+
+## Troubleshooting
+
+- **Docker Connection Issues:** Ensure Docker Desktop is running and fully initialized before building the image.
+- **Jupyter Notebook Access:** Make sure the port `8888` is available and not blocked by other applications.
+
+## Contact
+
+- **Email:** [m.smiwaseem1234@gmail.com](mailto:m.smiwaseem1234@gmail.com)
+- **LinkedIn:** [Muhammad Sami Asghar Mughal](https://www.linkedin.com/in/muhammad-sami-3aa6102b8/)
+
+## License
+
 This project is open-source and licensed under the MIT License.
-
-csharp
-Copy code
+```
 
 This file now includes your email and LinkedIn profile for contact purposes. You can copy this content into your `README.md` file on GitHub.
